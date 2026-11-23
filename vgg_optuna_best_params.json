@@ -1,0 +1,75 @@
+{
+  "study_name": "vgg11_cpu_optuna",
+  "best_trial_number": 0,
+  "best_inner_cv_ba_at_05": 0.5460002250225022,
+  "best_params": {
+    "lr": 4.7377279007281495e-05,
+    "weight_decay": 0.0071144760093434225,
+    "dropout": 0.49279757672456204,
+    "batch_size": 8,
+    "pos_weight_multiplier": 0.6091961642353418
+  },
+  "official_split_sha256": "d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856",
+  "inner_cv_random_state": 42,
+  "inner_cv_patient_groups": [
+    {
+      "fold": 1,
+      "train_patients": [
+        "G01",
+        "G02",
+        "G06",
+        "G07",
+        "G08",
+        "G11",
+        "G12",
+        "G14",
+        "G20",
+        "G21",
+        "G22"
+      ],
+      "valid_patients": [
+        "G03",
+        "G04",
+        "G10",
+        "G13",
+        "G15",
+        "G17",
+        "G19",
+        "G23",
+        "G24",
+        "G26",
+        "G27"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_patients": [
+        "G03",
+        "G04",
+        "G10",
+        "G13",
+        "G15",
+        "G17",
+        "G19",
+        "G23",
+        "G24",
+        "G26",
+        "G27"
+      ],
+      "valid_patients": [
+        "G01",
+        "G02",
+        "G06",
+        "G07",
+        "G08",
+        "G11",
+        "G12",
+        "G14",
+        "G20",
+        "G21",
+        "G22"
+      ]
+    }
+  ],
+  "note": "Optuna objective is the mean of each inner patient-group fold's best Balanced Accuracy at threshold 0.5. Official validation patients were not used during hyperparameter search."
+}
