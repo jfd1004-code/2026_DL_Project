@@ -1,0 +1,51 @@
+=== TASK 2 DATA AUDIT ===
+CSV: C:\Users\jfd10\DL_Term\data\T2_data\labels.csv
+Rows: 2948
+Columns: ['sample_id', 'path', 'label', 'patient_group']
+Duplicate sample_id: 0
+Missing values by required column: {'path': 0, 'label': 0, 'sample_id': 0, 'patient_group': 0}
+Label counts: {0: 2160, 1: 788}
+Positive rate: 0.2673
+Patients: 27
+Images per patient min/median/max: 87/109.0/139
+Per-patient counts (patient_group, images, positives):
+  G01: 112 images, 32 positive
+  G02: 115 images, 35 positive
+  G03: 115 images, 35 positive
+  G04: 99 images, 19 positive
+  G05: 106 images, 26 positive
+  G06: 117 images, 37 positive
+  G07: 106 images, 26 positive
+  G08: 126 images, 46 positive
+  G09: 91 images, 11 positive
+  G10: 123 images, 43 positive
+  G11: 90 images, 10 positive
+  G12: 107 images, 27 positive
+  G13: 111 images, 31 positive
+  G14: 103 images, 23 positive
+  G15: 104 images, 24 positive
+  G16: 114 images, 34 positive
+  G17: 87 images, 7 positive
+  G18: 109 images, 29 positive
+  G19: 128 images, 48 positive
+  G20: 95 images, 15 positive
+  G21: 139 images, 59 positive
+  G22: 110 images, 30 positive
+  G23: 107 images, 27 positive
+  G24: 112 images, 32 positive
+  G25: 125 images, 45 positive
+  G26: 90 images, 10 positive
+  G27: 107 images, 27 positive
+Image paths found: 2948/2948
+Missing image paths: 0
+Unreadable/corrupt images: 0
+Image dimensions (width, height): {(480, 724): 2948}
+Image modes: {'RGB': 2948}
+=== PATIENT-GROUP SPLIT CHECK ===
+Fold 1: train=2301 images/21 patients, valid=647 images/6 patients, valid_labels={0: 480, 1: 167}, overlap=0, usable=True
+Fold 2: train=2280 images/21 patients, valid=668 images/6 patients, valid_labels={0: 480, 1: 188}, overlap=0, usable=True
+Fold 3: train=2412 images/22 patients, valid=536 images/5 patients, valid_labels={0: 400, 1: 136}, overlap=0, usable=True
+Fold 4: train=2403 images/22 patients, valid=545 images/5 patients, valid_labels={0: 400, 1: 145}, overlap=0, usable=True
+Fold 5: train=2396 images/22 patients, valid=552 images/5 patients, valid_labels={0: 400, 1: 152}, overlap=0, usable=True
+Best-balanced candidate fold by current script rule: 4
+No existing task2_split.csv; current vgg.py will create one on first training run.
