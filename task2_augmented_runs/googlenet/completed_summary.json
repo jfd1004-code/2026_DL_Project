@@ -1,0 +1,37 @@
+{
+  "model": "googlenet",
+  "architecture": "GoogLeNet",
+  "checkpoint": "C:\\Users\\jfd10\\DL_Term\\task2_augmented_runs\\googlenet\\googlenet_dropblock.pt",
+  "best_epoch": 1,
+  "validation_auc": 0.7993448275862068,
+  "validation_ba_at_05": 0.8184913793103448,
+  "validation_threshold": 0.31999999999999995,
+  "validation_ba_at_selected_threshold": 0.8573706896551724,
+  "validation_metrics_at_05": {
+    "threshold": 0.5,
+    "balanced_accuracy": 0.8184913793103448,
+    "sensitivity": 0.8344827586206897,
+    "specificity": 0.8025,
+    "tn": 321,
+    "fp": 79,
+    "fn": 24,
+    "tp": 121
+  },
+  "validation_metrics_at_selected_threshold": {
+    "threshold": 0.31999999999999995,
+    "balanced_accuracy": 0.8573706896551724,
+    "sensitivity": 0.9172413793103448,
+    "specificity": 0.7975,
+    "tn": 319,
+    "fp": 81,
+    "fn": 12,
+    "tp": 133
+  },
+  "split_sha256": "d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856",
+  "train_images": 2403,
+  "valid_images": 545,
+  "train_patients": 22,
+  "valid_patients": 5,
+  "prediction_file": "C:\\Users\\jfd10\\DL_Term\\task2_augmented_runs\\googlenet\\validation_predictions.csv",
+  "note": "Validation metrics only; not private-test performance. Threshold is selected once on the official validation set and may be optimistic. No ensemble or prediction averaging is used."
+}

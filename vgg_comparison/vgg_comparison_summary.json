@@ -1,0 +1,16 @@
+{
+  "validation_images": 545,
+  "validation_patients": 5,
+  "validation_class_counts": {
+    "0": 400,
+    "1": 145
+  },
+  "split_sha256": "d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856",
+  "checkpoint_split_hash_verified": {
+    "baseline": false,
+    "Optuna": true
+  },
+  "metrics_file": "C:\\Users\\jfd10\\DL_Term\\vgg_comparison\\vgg_comparison_metrics.csv",
+  "predictions_file": "C:\\Users\\jfd10\\DL_Term\\vgg_comparison\\vgg_comparison_predictions.csv",
+  "warning": "Validation-optimal threshold metrics are optimistic because the threshold is selected and evaluated on the same validation labels. Prefer fixed 0.5, checkpoint threshold with caution, and ROC-AUC for threshold-independent ranking."
+}

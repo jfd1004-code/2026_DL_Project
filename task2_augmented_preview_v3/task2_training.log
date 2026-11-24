@@ -1,0 +1,16 @@
+2026-11-24 16:26:49 | INFO | === TASK 2 AUGMENTED TRAINING ===
+2026-11-24 16:26:49 | INFO | CSV: C:\Users\jfd10\DL_Term\data\T2_data\labels.csv
+2026-11-24 16:26:49 | INFO | Split: C:\Users\jfd10\DL_Term\task2_split.csv
+2026-11-24 16:26:49 | INFO | Split SHA256: d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856
+2026-11-24 16:26:49 | INFO | Dataset: 2948 images | 27 patients | labels={0: 2160, 1: 788}
+2026-11-24 16:26:49 | INFO | Train: 2403 images/22 patients | Valid: 545 images/5 patients
+2026-11-24 16:26:49 | INFO | Validation labels: {0: 400, 1: 145}
+2026-11-24 16:26:49 | INFO | Device: cpu
+2026-11-24 16:26:49 | INFO | Models to train: ['vgg', 'resnet', 'googlenet']
+2026-11-24 16:26:49 | INFO | Augmentation: HFlip p=0.5; affine rotation ±5°, translation 2%, scale 0.97–1.03; brightness ±10%, contrast ±12% with p=0.5
+2026-11-24 16:26:49 | INFO | Regularization: DropBlock=0.080; Stochastic Depth=0.000
+2026-11-24 16:26:49 | INFO | No pretrained weights, no external data, no ensemble, no prediction averaging.
+2026-11-24 16:26:49 | INFO | Checking image paths...
+2026-11-24 16:26:50 | INFO | Image path check passed: 2948/2948
+2026-11-24 16:26:51 | INFO | Augmentation preview saved: C:\Users\jfd10\DL_Term\task2_augmented_preview_v3\augmentation_preview.png
+2026-11-24 16:26:51 | INFO | No model training was started (--preview-only).

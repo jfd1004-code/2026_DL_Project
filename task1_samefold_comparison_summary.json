@@ -1,0 +1,64 @@
+{
+  "csv": "C:\\Users\\jfd10\\DL_Term\\data\\T1_data\\heloc_release.csv",
+  "cv": "StratifiedKFold(n_splits=3, shuffle=True, random_state=2026)",
+  "device": "cpu",
+  "max_epochs": 35,
+  "patience": 6,
+  "fold_seeds": [
+    2027,
+    2028,
+    2029
+  ],
+  "baseline_params": {
+    "hidden_dims": [
+      64,
+      32
+    ],
+    "dropout": 0.1,
+    "norm": "batch",
+    "activation": "relu",
+    "scaler": "robust",
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "ranking_weight": 0.0
+  },
+  "optuna_params": {
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.08377276976967908,
+    "norm": "none",
+    "activation": "relu",
+    "scaler": "standard",
+    "lr": 0.0007122813752450159,
+    "weight_decay": 1.7878467771532888e-06,
+    "batch_size": 128,
+    "ranking_weight": 0.029217292441938658
+  },
+  "baseline_fold_auroc": [
+    0.8005737619581941,
+    0.8053326485630523,
+    0.8086656985032795
+  ],
+  "optuna_fold_auroc": [
+    0.7986621860793318,
+    0.8059723072883502,
+    0.8100884475667811
+  ],
+  "paired_fold_difference_optuna_minus_baseline": [
+    -0.0019115758788622594,
+    0.0006396587252979202,
+    0.0014227490635015938
+  ],
+  "baseline_mean_auroc": 0.804857369674842,
+  "baseline_std_auroc_population": 0.0033205699087763213,
+  "optuna_mean_auroc": 0.8049076469781543,
+  "optuna_std_auroc_population": 0.004725109457425051,
+  "mean_paired_difference": 5.02773033124182e-05,
+  "optuna_wins_folds": 2,
+  "baseline_wins_folds": 1,
+  "ties": 0,
+  "interpretation_note": "This is a controlled same-fold comparison, but the Optuna configuration was selected using this same CV protocol. Its score therefore remains subject to hyperparameter-selection optimism and is not an independent estimate of private-test AUROC. Do not describe this as private-test performance."
+}

@@ -1,0 +1,37 @@
+{
+  "model": "vgg",
+  "architecture": "VGG11",
+  "checkpoint": "C:\\Users\\jfd10\\DL_Term\\task2_structured_runs\\vgg\\vgg11_dropblock.pt",
+  "best_epoch": 5,
+  "validation_auc": 0.6013793103448275,
+  "validation_ba_at_05": 0.7815086206896552,
+  "validation_threshold": 0.3549999999999999,
+  "validation_ba_at_selected_threshold": 0.7987500000000001,
+  "validation_metrics_at_05": {
+    "threshold": 0.5,
+    "balanced_accuracy": 0.7815086206896552,
+    "sensitivity": 0.9655172413793104,
+    "specificity": 0.5975,
+    "tn": 239,
+    "fp": 161,
+    "fn": 5,
+    "tp": 140
+  },
+  "validation_metrics_at_selected_threshold": {
+    "threshold": 0.3549999999999999,
+    "balanced_accuracy": 0.7987500000000001,
+    "sensitivity": 1.0,
+    "specificity": 0.5975,
+    "tn": 239,
+    "fp": 161,
+    "fn": 0,
+    "tp": 145
+  },
+  "split_sha256": "d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856",
+  "train_images": 2403,
+  "valid_images": 545,
+  "train_patients": 22,
+  "valid_patients": 5,
+  "prediction_file": "C:\\Users\\jfd10\\DL_Term\\task2_structured_runs\\vgg\\validation_predictions.csv",
+  "note": "Validation metrics only; not private-test performance. Threshold is selected once on the official validation set and may be optimistic. No ensemble or prediction averaging is used."
+}

@@ -1,0 +1,41 @@
+{
+  "checkpoint": "C:\\Users\\jfd10\\DL_Term\\vgg_patientbalanced.pt",
+  "best_epoch": 10,
+  "selection_metric": "mean per-patient Validation ROC-AUC",
+  "validation_global_auc": 0.6944655172413794,
+  "validation_patient_macro_auc": 0.7950862068965516,
+  "validation_patient_aucs": {
+    "G05": 0.5,
+    "G09": 1.0,
+    "G16": 0.5,
+    "G18": 0.9754310344827586,
+    "G25": 1.0
+  },
+  "validation_at_threshold_0_5": {
+    "threshold": 0.5,
+    "balanced_accuracy": 0.6703879310344828,
+    "accuracy": 0.5871559633027523,
+    "sensitivity": 0.8482758620689655,
+    "specificity": 0.4925,
+    "precision": 0.3773006134969325,
+    "tn": 197,
+    "fp": 203,
+    "fn": 22,
+    "tp": 123
+  },
+  "validation_descriptive_optimal_threshold": 0.03726343810558319,
+  "validation_at_descriptive_threshold": {
+    "threshold": 0.03726343810558319,
+    "balanced_accuracy": 0.6820258620689655,
+    "accuracy": 0.581651376146789,
+    "sensitivity": 0.896551724137931,
+    "specificity": 0.4675,
+    "precision": 0.37900874635568516,
+    "tn": 187,
+    "fp": 213,
+    "fn": 15,
+    "tp": 130
+  },
+  "split_sha256": "d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856",
+  "note": "The descriptive threshold is optimized on this validation set and is optimistic. The saved inference threshold remains fixed at 0.5. Validation contains only a small number of held-out patients; private-test performance may differ."
+}
