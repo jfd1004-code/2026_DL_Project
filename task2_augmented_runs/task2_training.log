@@ -1,0 +1,136 @@
+2026-11-24 16:11:01 | INFO | === TASK 2 AUGMENTED TRAINING ===
+2026-11-24 16:11:01 | INFO | CSV: C:\Users\jfd10\DL_Term\data\T2_data\labels.csv
+2026-11-24 16:11:01 | INFO | Split: C:\Users\jfd10\DL_Term\task2_split.csv
+2026-11-24 16:11:01 | INFO | Split SHA256: d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856
+2026-11-24 16:11:01 | INFO | Dataset: 2948 images | 27 patients | labels={0: 2160, 1: 788}
+2026-11-24 16:11:01 | INFO | Train: 2403 images/22 patients | Valid: 545 images/5 patients
+2026-11-24 16:11:01 | INFO | Validation labels: {0: 400, 1: 145}
+2026-11-24 16:11:01 | INFO | Device: cpu
+2026-11-24 16:11:01 | INFO | Models to train: ['vgg', 'resnet', 'googlenet']
+2026-11-24 16:11:01 | INFO | Augmentation: HFlip p=0.5; affine rotation ±5°, translation 2%, scale 0.97–1.03; brightness ±10%, contrast ±12% with p=0.5
+2026-11-24 16:11:01 | INFO | Regularization: DropBlock=0.080; Stochastic Depth=0.000
+2026-11-24 16:11:01 | INFO | No pretrained weights, no external data, no ensemble, no prediction averaging.
+2026-11-24 16:11:01 | INFO | Checking image paths...
+2026-11-24 16:11:02 | INFO | Image path check passed: 2948/2948
+2026-11-24 16:11:05 | INFO | ======================================================================
+2026-11-24 16:11:05 | INFO | [vgg] Starting training
+2026-11-24 16:11:05 | INFO | [vgg] Architecture: VGG11
+2026-11-24 16:11:05 | INFO | [vgg] Device: cpu | AMP: False
+2026-11-24 16:11:05 | INFO | [vgg] Train: 2403 images / 22 patients | Valid: 545 images / 5 patients
+2026-11-24 16:11:05 | INFO | [vgg] pos_weight: 2.1897
+2026-11-24 16:11:05 | INFO | [vgg] Split SHA256: d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856
+2026-11-24 16:11:05 | INFO | [vgg] Model config: {'model_name': 'vgg', 'architecture': 'VGG11', 'dropblock_prob': 0.08, 'stochastic_depth_prob': 0.0, 'classifier_dropout': 0.35, 'pretrained': False}
+2026-11-24 16:11:05 | INFO | [vgg] Training settings: epochs=35, batch=8, lr=0.0001, wd=0.0005, patience=7
+2026-11-24 16:14:48 | INFO | [vgg] Epoch 01/35 | loss=0.91136 | BA@0.5=0.50000 | AUC=0.39471 | LR=0.0001 | best=0.50000@1 | wait=0/7
+2026-11-24 16:35:17 | INFO | === TASK 2 AUGMENTED TRAINING ===
+2026-11-24 16:35:17 | INFO | CSV: C:\Users\jfd10\DL_Term\data\T2_data\labels.csv
+2026-11-24 16:35:17 | INFO | Split: C:\Users\jfd10\DL_Term\task2_split.csv
+2026-11-24 16:35:17 | INFO | Split SHA256: d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856
+2026-11-24 16:35:17 | INFO | Dataset: 2948 images | 27 patients | labels={0: 2160, 1: 788}
+2026-11-24 16:35:17 | INFO | Train: 2403 images/22 patients | Valid: 545 images/5 patients
+2026-11-24 16:35:17 | INFO | Validation labels: {0: 400, 1: 145}
+2026-11-24 16:35:17 | INFO | Device: cpu
+2026-11-24 16:35:17 | INFO | Models to train: ['vgg', 'resnet', 'googlenet']
+2026-11-24 16:35:17 | INFO | Augmentation: HFlip p=0.5; affine rotation ±5°, translation 2%, scale 0.97–1.03; brightness ±10%, contrast ±12% with p=0.5
+2026-11-24 16:35:17 | INFO | Regularization: DropBlock=0.080; Stochastic Depth=0.000
+2026-11-24 16:35:17 | INFO | No pretrained weights, no external data, no ensemble, no prediction averaging.
+2026-11-24 16:35:17 | INFO | Checking image paths...
+2026-11-24 16:35:21 | INFO | Image path check passed: 2948/2948
+2026-11-24 16:35:28 | INFO | [vgg] Resuming from C:\Users\jfd10\DL_Term\task2_augmented_runs\vgg\last_training_state.pt
+2026-11-24 16:35:28 | INFO | ======================================================================
+2026-11-24 16:35:28 | INFO | [vgg] Starting training
+2026-11-24 16:35:28 | INFO | [vgg] Architecture: VGG11
+2026-11-24 16:35:28 | INFO | [vgg] Device: cpu | AMP: False
+2026-11-24 16:35:28 | INFO | [vgg] Train: 2403 images / 22 patients | Valid: 545 images / 5 patients
+2026-11-24 16:35:28 | INFO | [vgg] pos_weight: 2.1897
+2026-11-24 16:35:28 | INFO | [vgg] Split SHA256: d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856
+2026-11-24 16:35:28 | INFO | [vgg] Model config: {'model_name': 'vgg', 'architecture': 'VGG11', 'dropblock_prob': 0.08, 'stochastic_depth_prob': 0.0, 'classifier_dropout': 0.35, 'pretrained': False}
+2026-11-24 16:35:28 | INFO | [vgg] Training settings: epochs=35, batch=8, lr=0.0001, wd=0.0005, patience=7
+2026-11-24 16:44:04 | INFO | [vgg] Epoch 02/35 | loss=0.90359 | BA@0.5=0.50595 | AUC=0.54124 | LR=0.0001 | best=0.50595@2 | wait=0/7
+2026-11-24 16:52:22 | INFO | [vgg] Epoch 03/35 | loss=0.69258 | BA@0.5=0.55862 | AUC=0.50691 | LR=0.0001 | best=0.55862@3 | wait=0/7
+2026-11-24 17:00:50 | INFO | [vgg] Epoch 04/35 | loss=0.51797 | BA@0.5=0.64384 | AUC=0.57878 | LR=0.0001 | best=0.64384@4 | wait=0/7
+2026-11-24 17:09:17 | INFO | [vgg] Epoch 05/35 | loss=0.39547 | BA@0.5=0.53823 | AUC=0.51841 | LR=0.0001 | best=0.64384@4 | wait=1/7
+2026-11-24 17:17:58 | INFO | [vgg] Epoch 06/35 | loss=0.22419 | BA@0.5=0.44634 | AUC=0.52103 | LR=0.0001 | best=0.64384@4 | wait=2/7
+2026-11-24 17:26:38 | INFO | [vgg] Epoch 07/35 | loss=0.13303 | BA@0.5=0.44927 | AUC=0.47766 | LR=5e-05 | best=0.64384@4 | wait=3/7
+2026-11-24 17:35:01 | INFO | [vgg] Epoch 08/35 | loss=0.06277 | BA@0.5=0.56302 | AUC=0.51528 | LR=5e-05 | best=0.64384@4 | wait=4/7
+2026-11-24 17:43:20 | INFO | [vgg] Epoch 09/35 | loss=0.05083 | BA@0.5=0.51254 | AUC=0.53972 | LR=5e-05 | best=0.64384@4 | wait=5/7
+2026-11-24 17:51:39 | INFO | [vgg] Epoch 10/35 | loss=0.06316 | BA@0.5=0.57241 | AUC=0.50788 | LR=2.5e-05 | best=0.64384@4 | wait=6/7
+2026-11-24 17:59:57 | INFO | [vgg] Epoch 11/35 | loss=0.04049 | BA@0.5=0.52543 | AUC=0.53273 | LR=2.5e-05 | best=0.64384@4 | wait=7/7
+2026-11-24 17:59:57 | INFO | [vgg] Early stopping at epoch 11; best epoch 4.
+2026-11-24 18:00:35 | INFO | [vgg] BEST EPOCH: 4
+2026-11-24 18:00:35 | INFO | [vgg] Validation AUC: 0.57878
+2026-11-24 18:00:35 | INFO | [vgg] Validation BA@0.5: 0.64384 | threshold=0.080 | BA@threshold=0.69625
+2026-11-24 18:00:35 | INFO | [vgg] Confusion matrix @0.5 [[TN,FP],[FN,TP]]: [[173,227],[21,124]]
+2026-11-24 18:00:35 | INFO | [vgg] Reload test: OK | max logit difference=0
+2026-11-24 18:00:35 | INFO | [vgg] Saved checkpoint: C:\Users\jfd10\DL_Term\task2_augmented_runs\vgg\vgg11_dropblock.pt
+2026-11-24 18:00:35 | INFO | [vgg] Saved predictions: C:\Users\jfd10\DL_Term\task2_augmented_runs\vgg\validation_predictions.csv
+2026-11-24 18:00:39 | INFO | ======================================================================
+2026-11-24 18:00:39 | INFO | [resnet] Starting training
+2026-11-24 18:00:39 | INFO | [resnet] Architecture: ResNet18
+2026-11-24 18:00:39 | INFO | [resnet] Device: cpu | AMP: False
+2026-11-24 18:00:39 | INFO | [resnet] Train: 2403 images / 22 patients | Valid: 545 images / 5 patients
+2026-11-24 18:00:39 | INFO | [resnet] pos_weight: 2.1897
+2026-11-24 18:00:39 | INFO | [resnet] Split SHA256: d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856
+2026-11-24 18:00:39 | INFO | [resnet] Model config: {'model_name': 'resnet', 'architecture': 'ResNet18', 'dropblock_prob': 0.08, 'stochastic_depth_prob': 0.0, 'classifier_dropout': 0.25, 'pretrained': False}
+2026-11-24 18:00:39 | INFO | [resnet] Training settings: epochs=35, batch=8, lr=0.0001, wd=0.0005, patience=7
+2026-11-24 18:04:01 | INFO | [resnet] Epoch 01/35 | loss=0.54892 | BA@0.5=0.66302 | AUC=0.66405 | LR=0.0001 | best=0.66302@1 | wait=0/7
+2026-11-24 18:07:26 | INFO | [resnet] Epoch 02/35 | loss=0.26550 | BA@0.5=0.69750 | AUC=0.75459 | LR=0.0001 | best=0.69750@2 | wait=0/7
+2026-11-24 18:10:52 | INFO | [resnet] Epoch 03/35 | loss=0.13707 | BA@0.5=0.86552 | AUC=0.83213 | LR=0.0001 | best=0.86552@3 | wait=0/7
+2026-11-24 18:48:18 | INFO | [resnet] Epoch 04/35 | loss=0.10250 | BA@0.5=0.78621 | AUC=0.74857 | LR=0.0001 | best=0.86552@3 | wait=1/7
+2026-11-24 18:51:58 | INFO | [resnet] Epoch 05/35 | loss=0.03702 | BA@0.5=0.87026 | AUC=0.87691 | LR=0.0001 | best=0.87026@5 | wait=0/7
+2026-11-24 18:55:31 | INFO | [resnet] Epoch 06/35 | loss=0.04985 | BA@0.5=0.79875 | AUC=0.82014 | LR=0.0001 | best=0.87026@5 | wait=1/7
+2026-11-24 18:58:59 | INFO | [resnet] Epoch 07/35 | loss=0.03599 | BA@0.5=0.81504 | AUC=0.81604 | LR=0.0001 | best=0.87026@5 | wait=2/7
+2026-11-24 19:02:30 | INFO | [resnet] Epoch 08/35 | loss=0.02581 | BA@0.5=0.88401 | AUC=0.82895 | LR=0.0001 | best=0.88401@8 | wait=0/7
+2026-11-24 19:06:01 | INFO | [resnet] Epoch 09/35 | loss=0.03170 | BA@0.5=0.60056 | AUC=0.71373 | LR=0.0001 | best=0.88401@8 | wait=1/7
+2026-11-24 19:09:32 | INFO | [resnet] Epoch 10/35 | loss=0.02238 | BA@0.5=0.80000 | AUC=0.82637 | LR=0.0001 | best=0.88401@8 | wait=2/7
+2026-11-24 19:13:03 | INFO | [resnet] Epoch 11/35 | loss=0.01799 | BA@0.5=0.79875 | AUC=0.79689 | LR=5e-05 | best=0.88401@8 | wait=3/7
+2026-11-24 19:16:36 | INFO | [resnet] Epoch 12/35 | loss=0.01056 | BA@0.5=0.79875 | AUC=0.83352 | LR=5e-05 | best=0.88401@8 | wait=4/7
+2026-11-24 19:20:08 | INFO | [resnet] Epoch 13/35 | loss=0.00917 | BA@0.5=0.89625 | AUC=0.86096 | LR=5e-05 | best=0.89625@13 | wait=0/7
+2026-11-24 19:23:40 | INFO | [resnet] Epoch 14/35 | loss=0.00165 | BA@0.5=0.89625 | AUC=0.81822 | LR=5e-05 | best=0.89625@13 | wait=1/7
+2026-11-24 19:27:12 | INFO | [resnet] Epoch 15/35 | loss=0.00499 | BA@0.5=0.89655 | AUC=0.82323 | LR=5e-05 | best=0.89655@15 | wait=0/7
+2026-11-24 19:30:44 | INFO | [resnet] Epoch 16/35 | loss=0.01130 | BA@0.5=0.88401 | AUC=0.89130 | LR=5e-05 | best=0.89655@15 | wait=1/7
+2026-11-24 19:34:17 | INFO | [resnet] Epoch 17/35 | loss=0.00901 | BA@0.5=0.78875 | AUC=0.81503 | LR=5e-05 | best=0.89655@15 | wait=2/7
+2026-11-24 19:37:51 | INFO | [resnet] Epoch 18/35 | loss=0.02513 | BA@0.5=0.75030 | AUC=0.76670 | LR=2.5e-05 | best=0.89655@15 | wait=3/7
+2026-11-24 19:41:25 | INFO | [resnet] Epoch 19/35 | loss=0.00115 | BA@0.5=0.88151 | AUC=0.81194 | LR=2.5e-05 | best=0.89655@15 | wait=4/7
+2026-11-24 19:44:58 | INFO | [resnet] Epoch 20/35 | loss=0.00024 | BA@0.5=0.88276 | AUC=0.81737 | LR=2.5e-05 | best=0.89655@15 | wait=5/7
+2026-11-24 19:48:32 | INFO | [resnet] Epoch 21/35 | loss=0.00023 | BA@0.5=0.88591 | AUC=0.81499 | LR=1.25e-05 | best=0.89655@15 | wait=6/7
+2026-11-24 19:52:04 | INFO | [resnet] Epoch 22/35 | loss=0.00012 | BA@0.5=0.87091 | AUC=0.81433 | LR=1.25e-05 | best=0.89655@15 | wait=7/7
+2026-11-24 19:52:04 | INFO | [resnet] Early stopping at epoch 22; best epoch 15.
+2026-11-24 19:52:23 | INFO | [resnet] BEST EPOCH: 15
+2026-11-24 19:52:23 | INFO | [resnet] Validation AUC: 0.82323
+2026-11-24 19:52:23 | INFO | [resnet] Validation BA@0.5: 0.89655 | threshold=0.215 | BA@threshold=0.90000
+2026-11-24 19:52:23 | INFO | [resnet] Confusion matrix @0.5 [[TN,FP],[FN,TP]]: [[320,80],[1,144]]
+2026-11-24 19:52:23 | INFO | [resnet] Reload test: OK | max logit difference=0
+2026-11-24 19:52:23 | INFO | [resnet] Saved checkpoint: C:\Users\jfd10\DL_Term\task2_augmented_runs\resnet\resnet18.pt
+2026-11-24 19:52:23 | INFO | [resnet] Saved predictions: C:\Users\jfd10\DL_Term\task2_augmented_runs\resnet\validation_predictions.csv
+2026-11-24 19:52:27 | INFO | ======================================================================
+2026-11-24 19:52:27 | INFO | [googlenet] Starting training
+2026-11-24 19:52:27 | INFO | [googlenet] Architecture: GoogLeNet
+2026-11-24 19:52:27 | INFO | [googlenet] Device: cpu | AMP: False
+2026-11-24 19:52:27 | INFO | [googlenet] Train: 2403 images / 22 patients | Valid: 545 images / 5 patients
+2026-11-24 19:52:27 | INFO | [googlenet] pos_weight: 2.1897
+2026-11-24 19:52:27 | INFO | [googlenet] Split SHA256: d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856
+2026-11-24 19:52:27 | INFO | [googlenet] Model config: {'model_name': 'googlenet', 'architecture': 'GoogLeNet', 'dropblock_prob': 0.08, 'stochastic_depth_prob': 0.0, 'classifier_dropout': 0.35, 'pretrained': False}
+2026-11-24 19:52:27 | INFO | [googlenet] Training settings: epochs=35, batch=8, lr=0.0001, wd=0.0005, patience=7
+2026-11-24 19:57:06 | INFO | [googlenet] Epoch 01/35 | loss=0.63307 | BA@0.5=0.81849 | AUC=0.79934 | LR=0.0001 | best=0.81849@1 | wait=0/7
+2026-11-24 20:01:43 | INFO | [googlenet] Epoch 02/35 | loss=0.28664 | BA@0.5=0.71500 | AUC=0.78374 | LR=0.0001 | best=0.81849@1 | wait=1/7
+2026-11-24 20:06:20 | INFO | [googlenet] Epoch 03/35 | loss=0.18386 | BA@0.5=0.79806 | AUC=0.81868 | LR=0.0001 | best=0.81849@1 | wait=2/7
+2026-11-24 20:10:56 | INFO | [googlenet] Epoch 04/35 | loss=0.16774 | BA@0.5=0.70000 | AUC=0.80068 | LR=5e-05 | best=0.81849@1 | wait=3/7
+2026-11-24 20:15:32 | INFO | [googlenet] Epoch 05/35 | loss=0.04453 | BA@0.5=0.70000 | AUC=0.82823 | LR=5e-05 | best=0.81849@1 | wait=4/7
+2026-11-24 20:20:11 | INFO | [googlenet] Epoch 06/35 | loss=0.03749 | BA@0.5=0.70000 | AUC=0.74809 | LR=5e-05 | best=0.81849@1 | wait=5/7
+2026-11-24 20:24:47 | INFO | [googlenet] Epoch 07/35 | loss=0.04436 | BA@0.5=0.70375 | AUC=0.85583 | LR=2.5e-05 | best=0.81849@1 | wait=6/7
+2026-11-24 20:29:25 | INFO | [googlenet] Epoch 08/35 | loss=0.02454 | BA@0.5=0.70875 | AUC=0.82269 | LR=2.5e-05 | best=0.81849@1 | wait=7/7
+2026-11-24 20:29:25 | INFO | [googlenet] Early stopping at epoch 8; best epoch 1.
+2026-11-24 20:29:50 | INFO | [googlenet] BEST EPOCH: 1
+2026-11-24 20:29:50 | INFO | [googlenet] Validation AUC: 0.79934
+2026-11-24 20:29:50 | INFO | [googlenet] Validation BA@0.5: 0.81849 | threshold=0.320 | BA@threshold=0.85737
+2026-11-24 20:29:50 | INFO | [googlenet] Confusion matrix @0.5 [[TN,FP],[FN,TP]]: [[321,79],[24,121]]
+2026-11-24 20:29:50 | INFO | [googlenet] Reload test: OK | max logit difference=0
+2026-11-24 20:29:50 | INFO | [googlenet] Saved checkpoint: C:\Users\jfd10\DL_Term\task2_augmented_runs\googlenet\googlenet_dropblock.pt
+2026-11-24 20:29:50 | INFO | [googlenet] Saved predictions: C:\Users\jfd10\DL_Term\task2_augmented_runs\googlenet\validation_predictions.csv
+2026-11-24 20:29:50 | INFO | ======================================================================
+2026-11-24 20:29:50 | INFO | TASK 2 RUN FINISHED
+2026-11-24 20:29:50 | INFO | vgg | BA@0.5=0.64384 | tuned threshold=0.080 | tuned BA=0.69625 | C:\Users\jfd10\DL_Term\task2_augmented_runs\vgg\vgg11_dropblock.pt
+2026-11-24 20:29:50 | INFO | resnet | BA@0.5=0.89655 | tuned threshold=0.215 | tuned BA=0.90000 | C:\Users\jfd10\DL_Term\task2_augmented_runs\resnet\resnet18.pt
+2026-11-24 20:29:50 | INFO | googlenet | BA@0.5=0.81849 | tuned threshold=0.320 | tuned BA=0.85737 | C:\Users\jfd10\DL_Term\task2_augmented_runs\googlenet\googlenet_dropblock.pt
+2026-11-24 20:29:50 | INFO | Summary: C:\Users\jfd10\DL_Term\task2_augmented_runs\task2_run_summary.json

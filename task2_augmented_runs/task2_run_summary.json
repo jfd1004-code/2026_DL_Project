@@ -1,0 +1,125 @@
+{
+  "created_at": "2026-11-24T20:29:50",
+  "split_sha256": "d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856",
+  "device": "cpu",
+  "models_requested": [
+    "vgg",
+    "resnet",
+    "googlenet"
+  ],
+  "completed": [
+    {
+      "model": "vgg",
+      "architecture": "VGG11",
+      "checkpoint": "C:\\Users\\jfd10\\DL_Term\\task2_augmented_runs\\vgg\\vgg11_dropblock.pt",
+      "best_epoch": 4,
+      "validation_auc": 0.5787844827586207,
+      "validation_ba_at_05": 0.6438362068965517,
+      "validation_threshold": 0.08,
+      "validation_ba_at_selected_threshold": 0.69625,
+      "validation_metrics_at_05": {
+        "threshold": 0.5,
+        "balanced_accuracy": 0.6438362068965517,
+        "sensitivity": 0.8551724137931035,
+        "specificity": 0.4325,
+        "tn": 173,
+        "fp": 227,
+        "fn": 21,
+        "tp": 124
+      },
+      "validation_metrics_at_selected_threshold": {
+        "threshold": 0.08,
+        "balanced_accuracy": 0.69625,
+        "sensitivity": 1.0,
+        "specificity": 0.3925,
+        "tn": 157,
+        "fp": 243,
+        "fn": 0,
+        "tp": 145
+      },
+      "split_sha256": "d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856",
+      "train_images": 2403,
+      "valid_images": 545,
+      "train_patients": 22,
+      "valid_patients": 5,
+      "prediction_file": "C:\\Users\\jfd10\\DL_Term\\task2_augmented_runs\\vgg\\validation_predictions.csv",
+      "note": "Validation metrics only; not private-test performance. Threshold is selected once on the official validation set and may be optimistic. No ensemble or prediction averaging is used."
+    },
+    {
+      "model": "resnet",
+      "architecture": "ResNet18",
+      "checkpoint": "C:\\Users\\jfd10\\DL_Term\\task2_augmented_runs\\resnet\\resnet18.pt",
+      "best_epoch": 15,
+      "validation_auc": 0.8232327586206897,
+      "validation_ba_at_05": 0.896551724137931,
+      "validation_threshold": 0.21499999999999997,
+      "validation_ba_at_selected_threshold": 0.9,
+      "validation_metrics_at_05": {
+        "threshold": 0.5,
+        "balanced_accuracy": 0.896551724137931,
+        "sensitivity": 0.993103448275862,
+        "specificity": 0.8,
+        "tn": 320,
+        "fp": 80,
+        "fn": 1,
+        "tp": 144
+      },
+      "validation_metrics_at_selected_threshold": {
+        "threshold": 0.21499999999999997,
+        "balanced_accuracy": 0.9,
+        "sensitivity": 1.0,
+        "specificity": 0.8,
+        "tn": 320,
+        "fp": 80,
+        "fn": 0,
+        "tp": 145
+      },
+      "split_sha256": "d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856",
+      "train_images": 2403,
+      "valid_images": 545,
+      "train_patients": 22,
+      "valid_patients": 5,
+      "prediction_file": "C:\\Users\\jfd10\\DL_Term\\task2_augmented_runs\\resnet\\validation_predictions.csv",
+      "note": "Validation metrics only; not private-test performance. Threshold is selected once on the official validation set and may be optimistic. No ensemble or prediction averaging is used."
+    },
+    {
+      "model": "googlenet",
+      "architecture": "GoogLeNet",
+      "checkpoint": "C:\\Users\\jfd10\\DL_Term\\task2_augmented_runs\\googlenet\\googlenet_dropblock.pt",
+      "best_epoch": 1,
+      "validation_auc": 0.7993448275862068,
+      "validation_ba_at_05": 0.8184913793103448,
+      "validation_threshold": 0.31999999999999995,
+      "validation_ba_at_selected_threshold": 0.8573706896551724,
+      "validation_metrics_at_05": {
+        "threshold": 0.5,
+        "balanced_accuracy": 0.8184913793103448,
+        "sensitivity": 0.8344827586206897,
+        "specificity": 0.8025,
+        "tn": 321,
+        "fp": 79,
+        "fn": 24,
+        "tp": 121
+      },
+      "validation_metrics_at_selected_threshold": {
+        "threshold": 0.31999999999999995,
+        "balanced_accuracy": 0.8573706896551724,
+        "sensitivity": 0.9172413793103448,
+        "specificity": 0.7975,
+        "tn": 319,
+        "fp": 81,
+        "fn": 12,
+        "tp": 133
+      },
+      "split_sha256": "d61c3e689b9aece2b1d5919bf51a749e2b5e798edb9afa9f8bd98f112b900856",
+      "train_images": 2403,
+      "valid_images": 545,
+      "train_patients": 22,
+      "valid_patients": 5,
+      "prediction_file": "C:\\Users\\jfd10\\DL_Term\\task2_augmented_runs\\googlenet\\validation_predictions.csv",
+      "note": "Validation metrics only; not private-test performance. Threshold is selected once on the official validation set and may be optimistic. No ensemble or prediction averaging is used."
+    }
+  ],
+  "failures": [],
+  "note": "All three architectures are independent models. Their predictions must not be averaged for this assignment. Validation scores are not private-test scores."
+}

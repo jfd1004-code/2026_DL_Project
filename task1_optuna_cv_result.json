@@ -1,0 +1,32 @@
+{
+  "best_cv_mean_auc": 0.8049076469781543,
+  "best_cv_std_auc": 0.004725109457425051,
+  "fold_aucs": [
+    0.7986621860793318,
+    0.8059723072883502,
+    0.8100884475667811
+  ],
+  "best_epochs_per_fold": [
+    5,
+    11,
+    7
+  ],
+  "final_epochs": 7,
+  "best_params": {
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "dropout": 0.08377276976967908,
+    "norm": "none",
+    "activation": "relu",
+    "scaler": "standard",
+    "lr": 0.0007122813752450159,
+    "weight_decay": 1.7878467771532888e-06,
+    "batch_size": 128,
+    "ranking_weight": 0.029217292441938658
+  },
+  "n_trials": 10,
+  "cv": "StratifiedKFold(3), random_state=2026",
+  "note": "CV score is used for model selection and is not the private-test AUROC. Selecting the best among trials can make the reported CV score optimistic. Final checkpoint is one DNN, not an ensemble."
+}

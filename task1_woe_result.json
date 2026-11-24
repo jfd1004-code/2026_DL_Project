@@ -1,0 +1,41 @@
+{
+  "experiment": "Task1 HELOC fold-local WoE + single DNN",
+  "cv": "StratifiedKFold(3), shuffle=True, random_state=2026",
+  "fold_seeds": [
+    2027,
+    2028,
+    2029
+  ],
+  "fold_auroc": [
+    0.8017606163313937,
+    0.8047843696556543,
+    0.797151841447919
+  ],
+  "mean_auroc": 0.8012322758116556,
+  "std_auroc_population": 0.0031382829157642444,
+  "fold_best_epochs": [
+    9,
+    31,
+    3
+  ],
+  "final_fit_epochs": 9,
+  "n_bins": 6,
+  "woe_alpha": 10.0,
+  "inner_folds": 5,
+  "model_config": {
+    "hidden_dims": [
+      16,
+      8,
+      4
+    ],
+    "dropout": 0.05,
+    "norm": "none",
+    "activation": "relu",
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "batch_size": 128,
+    "ranking_weight": 0.0,
+    "scaler": "none"
+  },
+  "note": "Validation CV estimate only; not private-test performance. Binning and WoE maps are fit within each outer training fold. Training rows use inner OOF WoE encoding."
+}
