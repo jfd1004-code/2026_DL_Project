@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import torch
 import torch.nn as nn
@@ -22,16 +23,20 @@ def best_threshold(p, y):
     return float(ts[i]), float(s[i])
 
 
-def fit(model, train_loader, valid_loader, train_labels, save_path, epochs=20, lr=3e-4, device="cuda"):
+def fit(model, train_loader, valid_loader, train_labels, save_path, epochs=15, lr=1e-4, device="cuda"):
     model.to(device)
     counts = np.bincount(train_labels, minlength=2)
     w = torch.tensor(counts.sum() / (2 * counts), dtype=torch.float32, device=device)
     criterion = nn.CrossEntropyLoss(weight=w)
-    opt = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-4)
+    opt = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad], lr=lr, weight_decay=1e-4)
     sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, epochs)
     best = -1
     for ep in range(epochs):
         model.train()
+        if getattr(model, "freeze_bn", False):
+            for mod in model.modules():
+                if isinstance(mod, nn.BatchNorm2d):
+                    mod.eval()
         total = 0
         for x, y in train_loader:
             x, y = x.to(device), y.to(device)
@@ -45,8 +50,8 @@ def fit(model, train_loader, valid_loader, train_labels, save_path, epochs=20, l
         ba05 = balanced_accuracy_score(yv, (p >= 0.5).astype(int))
         t, ba = best_threshold(p, yv)
         print(f"ep {ep+1:02d} loss {total/len(train_loader.dataset):.4f} ba@0.5 {ba05:.4f} best_ba {ba:.4f} t {t:.2f}", flush=True)
-        if ba > best:
-            best = ba
-            torch.save({"state_dict": model.state_dict(), "threshold": t, "valid_ba": ba, "epoch": ep + 1}, save_path)
-    print("best", best)
+        if ba05 > best or os.environ.get("FULL") == "1":
+            best = ba05
+            torch.save(model.state_dict(), save_path)
+    print("best ba@0.5", best, flush=True)
     return best

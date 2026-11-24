@@ -15,7 +15,7 @@ def build_model(pretrained=True):
         m.aux1 = None
         m.aux2 = None
     else:
-        m = models.googlenet(weights=None, aux_logits=False, init_weights=True)
+        m = models.googlenet(weights=None, aux_logits=False, init_weights=True, transform_input=True)
     m.fc = nn.Linear(m.fc.in_features, 2)
     return m
 
