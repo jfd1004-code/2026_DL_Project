@@ -1,0 +1,53 @@
+{
+  "model_config": {
+    "architecture": "vgg11",
+    "strategy": "scratch",
+    "pretrained_imagenet": false,
+    "dropout": 0.3,
+    "img_h": 384,
+    "img_w": 256,
+    "augmentation": "base",
+    "valid_fold": 1,
+    "imagenet_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "imagenet_std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "split_summary": {
+    "rows": 2948,
+    "patients": 27,
+    "train_images": 2283,
+    "valid_images": 665,
+    "train_patients": 21,
+    "valid_patients": 6,
+    "valid_fold": 1,
+    "split_sha256": "7b6326eb81f9b18ad006e1ac5fcaf2667529e136567499e4b04e60999720ec1c",
+    "train_label_counts": {
+      "0": 1680,
+      "1": 603
+    },
+    "valid_label_counts": {
+      "0": 480,
+      "1": 185
+    }
+  },
+  "best_epoch": 1,
+  "ba_at_05": {
+    "threshold": 0.5,
+    "ba": 0.5,
+    "auc": 0.4116891891891892,
+    "tn": 480,
+    "fp": 0,
+    "fn": 185,
+    "tp": 0
+  },
+  "threshold_selected_on_validation": 0.05,
+  "ba_at_selected_threshold_descriptive_only": 0.5,
+  "note": "The selected threshold uses validation labels and is optimistic; primary checkpoint selected with BA at 0.5. This is not private-test performance."
+}
