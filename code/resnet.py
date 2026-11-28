@@ -20,4 +20,4 @@ if __name__ == "__main__":
     pretrained = (sys.argv[3] if len(sys.argv) > 3 else "1") == "1"
     torch.manual_seed(42)
     tl, vl, y = get_loaders(root, str(Path(__file__).resolve().parent.parent / "split.csv"))
-    fit(build_model(pretrained), tl, vl, y, out, epochs=15, lr=1e-4 if pretrained else 3e-4)
+    fit(build_model(pretrained), tl, vl, y, out, epochs=15, lr=3e-5 if pretrained else 3e-4)
